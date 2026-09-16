@@ -33,7 +33,7 @@
 .hero__copy {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: var(--gap-md) var(--gap-lg) var(--gap-md) var(--page-pad);
   position: relative;
   z-index: 1;
