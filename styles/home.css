@@ -61,7 +61,7 @@
 
 /* Right — image */
 .hero__image {
-  background-image: url('../assets/images/hero.jpg');
+  background-image: url('/assets/images/hero.jpg');
   background-size: cover;
   background-position: center;
 }
