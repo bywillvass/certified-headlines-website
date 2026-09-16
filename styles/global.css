@@ -80,7 +80,7 @@ main {
 /* ─── Type utilities ─────────────────────────────────────────────────────── */
 .display {
   font-family: var(--font-display);
-  line-height: 0.85;
+  line-height: 0.78;
   letter-spacing: 0.01em;
   text-transform: uppercase;
 }
