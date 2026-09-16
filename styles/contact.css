@@ -20,16 +20,8 @@
 .contact-info__heading {
   font-family: var(--font-display);
   font-size: clamp(4rem, 9vw, 9rem);
-  line-height: 0.9;
+  line-height: 0.85;
   text-transform: uppercase;
-  position: relative;
-}
-
-.contact-info__heading .spray {
-  bottom: -8%;
-  left: -2%;
-  width: 102%;
-  height: 44%;
 }
 
 .contact-info__details {

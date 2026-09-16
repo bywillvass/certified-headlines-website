@@ -8,7 +8,7 @@
 .services-hero__heading {
   font-family: var(--font-display);
   font-size: clamp(4rem, 10vw, 10rem);
-  line-height: 0.9;
+  line-height: 0.85;
   text-transform: uppercase;
 }
 
@@ -96,19 +96,12 @@
 .service-panel__name {
   font-family: var(--font-display);
   font-size: clamp(3.5rem, 6vw, 7rem);
-  line-height: 0.92;
+  line-height: 0.85;
   text-transform: uppercase;
   margin-bottom: var(--gap-md);
   position: relative;
 }
 
-/* Spray mark on the service name */
-.service-panel__name .spray {
-  top: -20%;
-  left: -4%;
-  width: 108%;
-  height: 140%;
-}
 
 .service-panel__desc {
   font-size: var(--size-base);
@@ -151,7 +144,7 @@
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 5vw, 5rem);
   text-transform: uppercase;
-  line-height: 0.9;
+  line-height: 0.85;
   margin-bottom: var(--gap-lg);
 }
 
@@ -204,7 +197,7 @@
   font-size: clamp(3rem, 7vw, 8rem);
   text-transform: uppercase;
   color: var(--paper);
-  line-height: 0.9;
+  line-height: 0.85;
   margin-bottom: var(--gap-md);
 }
 

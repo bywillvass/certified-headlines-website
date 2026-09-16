@@ -43,19 +43,11 @@
 .hero__headline {
   font-family: var(--font-display);
   font-size: var(--size-hero);
-  line-height: 0.9;
+  line-height: 0.85;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   margin-bottom: var(--gap-md);
   position: relative;
-}
-
-/* Spray mark — positioned over "HEADLINES" */
-.hero__headline .spray {
-  bottom: -18%;
-  left: -2%;
-  width: 102%;
-  height: 55%;
 }
 
 .hero__sub {
@@ -110,14 +102,6 @@
   color: var(--sage);
 }
 
-/* Spray streak on image corner */
-.hero__image .spray {
-  top: var(--gap-md);
-  right: -12px;
-  width: 80px;
-  height: 80px;
-  transform: rotate(-30deg);
-}
 
 /* ─── Marquee strip ──────────────────────────────────────────────────────── */
 .marquee-strip {
@@ -262,7 +246,7 @@
 .home-about__heading {
   font-family: var(--font-display);
   font-size: clamp(3.5rem, 7vw, 7rem);
-  line-height: 0.9;
+  line-height: 0.85;
   text-transform: uppercase;
 }
 
@@ -339,7 +323,7 @@
   font-family: var(--font-display);
   font-size: clamp(3rem, 8vw, 9rem);
   text-transform: uppercase;
-  line-height: 0.9;
+  line-height: 0.85;
   max-width: 14ch;
   margin-inline: auto;
 }
