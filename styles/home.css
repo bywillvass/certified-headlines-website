@@ -2,7 +2,7 @@
 .hero {
   background-color: var(--ink);
   color: var(--paper);
-  min-height: calc(100dvh - var(--nav-h));
+  min-height: 70vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
