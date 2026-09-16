@@ -2,7 +2,6 @@
 .hero {
   background-color: var(--ink);
   color: var(--paper);
-  min-height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
@@ -35,14 +34,14 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: var(--gap-xl) var(--gap-lg) var(--gap-xl) var(--page-pad);
+  padding: var(--gap-md) var(--gap-lg) var(--gap-md) var(--page-pad);
   position: relative;
   z-index: 1;
 }
 
 .hero__headline {
   font-family: var(--font-display);
-  font-size: var(--size-hero);
+  font-size: clamp(3rem, 6vw, 6rem);
   line-height: 0.78;
   letter-spacing: 0.01em;
   text-transform: uppercase;
