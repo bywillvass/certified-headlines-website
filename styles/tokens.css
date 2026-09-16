@@ -1,0 +1,42 @@
+:root {
+  /* Palette */
+  --ink: #171e19;
+  --paper: #ffffff;
+  --signal: #ff6a0f;
+  --warm-grey: #e8e6df;
+  --sage: #8a9089;
+
+  /* Type faces */
+  --font-display: "bebas-neue", "Bebas Neue", Impact, sans-serif;
+  --font-body: "nexa", Inter, sans-serif;
+
+  /* Type scale */
+  --size-xs: 0.6875rem;
+  --size-sm: 0.75rem;
+  --size-base: 1rem;
+  --size-md: 1.125rem;
+  --size-lg: 1.5rem;
+  --size-xl: 2.25rem;
+  --size-2xl: 4rem;
+  --size-3xl: 7rem;
+  --size-hero: clamp(5rem, 14vw, 13rem);
+
+  /* Spacing */
+  --gap-xs: 0.5rem;
+  --gap-sm: 1rem;
+  --gap-md: 2rem;
+  --gap-lg: 4rem;
+  --gap-xl: 7rem;
+  --gap-2xl: 12rem;
+
+  /* Layout */
+  --page-pad: clamp(1.25rem, 5vw, 5rem);
+  --max-w: 1440px;
+  --nav-h: 72px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 0.2s;
+  --t-base: 0.4s;
+  --t-slow: 0.9s;
+}

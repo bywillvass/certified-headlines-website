@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Certified Headlines</title>
+  <meta name="description" content="Social media, graphic design, photography, videography — four ways we make it matter.">
+
+  <link rel="stylesheet" href="https://use.typekit.net/wdv3qtv.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/services.css">
+</head>
+<body class="page">
+
+  <!-- ─── Navigation ──────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="Certified Headlines — home">
+        <span class="nav__logo-wordmark">Certified Headlines</span>
+      </a>
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── Page header ───────────────────────────────────────────────── -->
+    <section class="services-hero">
+      <div class="wrap">
+        <h1 class="services-hero__heading display">
+          What We<br><span class="signal">Do</span>
+        </h1>
+        <p class="services-hero__sub">
+          <!-- PLACEHOLDER -->
+          Four disciplines. One standard. Everything we touch is built to make an impact — and make you impossible to ignore.
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── Social Media ──────────────────────────────────────────────── -->
+    <section class="service-panel service-panel--dark" id="social-media" aria-labelledby="service-1-name">
+      <div class="service-panel__image" aria-hidden="true">
+        <div class="service-panel__img-ph img-ph" data-label="Social media — content/feed examples placeholder"></div>
+      </div>
+      <div class="service-panel__content">
+        <h2 class="service-panel__name display" id="service-1-name">
+          Social<br>Media
+          <!-- Spray mark — one per service panel, only on the first panel -->
+          <svg class="spray" viewBox="0 0 480 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="bottom:-10%;left:-3%;width:106%;height:52%;position:absolute;overflow:visible;">
+            <defs>
+              <filter id="f-s1" x="-18%" y="-60%" width="136%" height="220%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.033 0.05" numOctaves="4" seed="3" result="n"/>
+                <feDisplacementMap in="SourceGraphic" in2="n" scale="13" xChannelSelector="R" yChannelSelector="G" result="d"/>
+                <feGaussianBlur in="d" stdDeviation="0.8"/>
+              </filter>
+            </defs>
+            <ellipse cx="240" cy="80" rx="216" ry="52" stroke="#ff6a0f" stroke-width="8" stroke-dasharray="8 3" fill="none" filter="url(#f-s1)" opacity="0.85" transform="rotate(-1.2 240 80)"/>
+          </svg>
+        </h2>
+        <p class="service-panel__desc">
+          <!-- PLACEHOLDER -->
+          Content that stops the scroll. Strategy, creation, and management built around your brand — not a generic template. We know what works because we live on the same feeds you do.
+        </p>
+        <ul class="service-panel__offerings" aria-label="Included in Social Media">
+          <li class="service-tag">Content Strategy</li>
+          <li class="service-tag">Feed Design</li>
+          <li class="service-tag">Copywriting</li>
+          <li class="service-tag">Scheduling</li>
+          <li class="service-tag">Analytics</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ─── Graphic Design ────────────────────────────────────────────── -->
+    <section class="service-panel service-panel--light" id="graphic-design" aria-labelledby="service-2-name">
+      <div class="service-panel__image" aria-hidden="true">
+        <div class="service-panel__img-ph img-ph" data-label="Graphic design — brand work / print / digital placeholder"></div>
+      </div>
+      <div class="service-panel__content">
+        <h2 class="service-panel__name display" id="service-2-name" style="position:relative;">
+          Graphic<br>Design
+        </h2>
+        <p class="service-panel__desc">
+          <!-- PLACEHOLDER -->
+          Brand systems, logos, print, digital — we design things that feel intentional because they are. If it goes on something people see, it should be something they remember.
+        </p>
+        <ul class="service-panel__offerings" aria-label="Included in Graphic Design">
+          <li class="service-tag">Logo &amp; Identity</li>
+          <li class="service-tag">Brand Guidelines</li>
+          <li class="service-tag">Print Design</li>
+          <li class="service-tag">Digital Assets</li>
+          <li class="service-tag">Merchandise</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ─── Photography ───────────────────────────────────────────────── -->
+    <section class="service-panel service-panel--grey" id="photography" aria-labelledby="service-3-name">
+      <div class="service-panel__image" aria-hidden="true">
+        <div class="service-panel__img-ph img-ph" data-label="Photography — portrait / event / product placeholder"></div>
+      </div>
+      <div class="service-panel__content">
+        <h2 class="service-panel__name display" id="service-3-name" style="position:relative;">
+          Photo&shy;graphy
+        </h2>
+        <p class="service-panel__desc">
+          <!-- PLACEHOLDER -->
+          We shoot the moments worth keeping. From brand campaigns to portraits to events — every frame is a deliberate decision. No happy accidents, just results.
+        </p>
+        <ul class="service-panel__offerings" aria-label="Included in Photography">
+          <li class="service-tag">Brand Campaigns</li>
+          <li class="service-tag">Portraits</li>
+          <li class="service-tag">Events</li>
+          <li class="service-tag">Product</li>
+          <li class="service-tag">Editorial</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ─── Videography ───────────────────────────────────────────────── -->
+    <section class="service-panel service-panel--dark" id="videography" aria-labelledby="service-4-name">
+      <div class="service-panel__image" aria-hidden="true">
+        <div class="service-panel__img-ph img-ph" data-label="Videography — reel / production placeholder"></div>
+      </div>
+      <div class="service-panel__content">
+        <h2 class="service-panel__name display" id="service-4-name" style="position:relative;">
+          Video&shy;graphy
+        </h2>
+        <p class="service-panel__desc">
+          <!-- PLACEHOLDER -->
+          Stories that move — literally. Brand films, reels, promos, behind-the-scenes. Video that makes people watch again and actually share it.
+        </p>
+        <ul class="service-panel__offerings" aria-label="Included in Videography">
+          <li class="service-tag">Brand Films</li>
+          <li class="service-tag">Reels &amp; Shorts</li>
+          <li class="service-tag">Event Coverage</li>
+          <li class="service-tag">Promo Videos</li>
+          <li class="service-tag">Editing</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ─── Process ───────────────────────────────────────────────────── -->
+    <section class="services-process" aria-labelledby="process-heading">
+      <div class="wrap">
+        <h2 class="services-process__heading display" id="process-heading">
+          How We<br>Work
+        </h2>
+        <div class="process-steps">
+          <div class="process-step">
+            <span class="process-step__num display">01</span>
+            <h3 class="process-step__title display">Brief</h3>
+            <p class="process-step__desc">
+              <!-- PLACEHOLDER -->
+              We get deep on what you need and why. No assumptions, no guessing. We need to understand your audience before we touch a single thing.
+            </p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__num display">02</span>
+            <h3 class="process-step__title display">Build</h3>
+            <p class="process-step__desc">
+              <!-- PLACEHOLDER -->
+              We make it. Fast, intentional, and built exactly to the brief. One revision round built in — because we get it right the first time.
+            </p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__num display">03</span>
+            <h3 class="process-step__title display">Deliver</h3>
+            <p class="process-step__desc">
+              <!-- PLACEHOLDER -->
+              You get the finished work, the files, and everything you need to use it. Clean handoff. No running in circles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA band ──────────────────────────────────────────────────── -->
+    <section class="services-cta" aria-label="Call to action">
+      <div class="wrap">
+        <h2 class="services-cta__heading display">
+          Ready To<br>Make<br><span style="color:var(--ink);">Headlines?</span>
+        </h2>
+        <a href="contact.html" class="btn">Work With Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo display">Certified Headlines</span>
+        <p class="footer__tagline">We Make Headlines.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://instagram.com/certifiedheadlines" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Certified Headlines</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certified Headlines — We Make Headlines</title>
+  <meta name="description" content="A creative agency. The engine behind the moments you feel. Design, branding, photography.">
+
+  <!-- Adobe Fonts (Nexa) -->
+  <link rel="stylesheet" href="https://use.typekit.net/wdv3qtv.css">
+  <!-- Google Fonts (Bebas Neue) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+<body class="page">
+
+  <!-- ─── Navigation ──────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="Certified Headlines — home">
+        <!-- Drop logo image here when ready: <img src="assets/logo/ch-logo-reversed.svg" alt="Certified Headlines"> -->
+        <span class="nav__logo-wordmark">Certified Headlines</span>
+      </a>
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── Hero ──────────────────────────────────────────────────────── -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__copy">
+        <h1 class="hero__headline display">
+          <span class="reveal-line"><span class="reveal-text">We Make</span></span>
+          <span class="reveal-line" style="position:relative;">
+            <span class="reveal-text">
+              Head<span class="signal">lines</span>
+            </span>
+            <!-- Spray oval beneath "Headlines" — one deliberate mark -->
+            <svg class="spray hero__headline-spray" viewBox="0 0 520 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="bottom:-14%;left:-1%;width:102%;height:52%;position:absolute;overflow:visible;">
+              <defs>
+                <filter id="f-hero-spray" x="-18%" y="-60%" width="136%" height="220%">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.03 0.05" numOctaves="4" seed="5" result="noise"/>
+                  <feDisplacementMap in="SourceGraphic" in2="noise" scale="13" xChannelSelector="R" yChannelSelector="G" result="d"/>
+                  <feGaussianBlur in="d" stdDeviation="0.7"/>
+                </filter>
+              </defs>
+              <ellipse cx="260" cy="50" rx="234" ry="36" stroke="#ff6a0f" stroke-width="8" stroke-dasharray="7 2" fill="none" filter="url(#f-hero-spray)" opacity="0.85" transform="rotate(-1 260 50)"/>
+            </svg>
+          </span>
+        </h1>
+
+        <p class="hero__sub reveal-line" style="overflow:visible;">
+          <span class="reveal-text" style="display:block; transition-delay:0.28s;">
+            A creative agency.<br>
+            Design. Photography.<br>
+            Branding. All certified.
+          </span>
+        </p>
+
+        <div class="hero__actions">
+          <a href="work.html" class="btn">See Our Work</a>
+          <a href="contact.html" class="btn btn--ghost">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero__image" aria-hidden="true">
+        <div class="hero__img-ph img-ph" data-label="Hero — campaign / brand photography">
+          <!-- Real photography goes here -->
+          <!-- Spray streak accent on image corner -->
+          <svg class="spray" style="top:1.5rem;right:-6px;width:72px;height:72px;transform:rotate(-24deg);overflow:visible;" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <defs>
+              <filter id="f-streak" x="-30%" y="-30%" width="160%" height="160%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.06 0.09" numOctaves="3" seed="12" result="noise"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" result="d"/>
+                <feGaussianBlur in="d" stdDeviation="1.2"/>
+              </filter>
+            </defs>
+            <path d="M10 100 Q40 20 110 10" stroke="#ff6a0f" stroke-width="14" stroke-linecap="round" fill="none" filter="url(#f-streak)" opacity="0.82"/>
+            <path d="M18 94 Q44 28 106 16" stroke="#ff6a0f" stroke-width="6" stroke-linecap="round" fill="none" filter="url(#f-streak)" opacity="0.45"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Marquee strip ──────────────────────────────────────────────── -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span>We Design</span><span>—</span>
+        <span>We Shoot</span><span>—</span>
+        <span>We Create</span><span>—</span>
+        <span>We Make Headlines</span><span>—</span>
+        <span>We Design</span><span>—</span>
+        <span>We Shoot</span><span>—</span>
+        <span>We Create</span><span>—</span>
+        <span>We Make Headlines</span><span>—</span>
+        <!-- Duplicate for seamless loop -->
+        <span>We Design</span><span>—</span>
+        <span>We Shoot</span><span>—</span>
+        <span>We Create</span><span>—</span>
+        <span>We Make Headlines</span><span>—</span>
+        <span>We Design</span><span>—</span>
+        <span>We Shoot</span><span>—</span>
+        <span>We Create</span><span>—</span>
+        <span>We Make Headlines</span><span>—</span>
+      </div>
+    </div>
+
+    <!-- ─── Featured Work ──────────────────────────────────────────────── -->
+    <section class="home-work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <header class="home-work__header">
+          <h2 class="home-work__title display" id="work-heading">Featured Work</h2>
+          <a href="work.html" class="home-work__link">All Projects</a>
+        </header>
+
+        <div class="home-work__grid">
+          <article class="work-cell work-cell--a">
+            <div class="work-cell__img img-ph" data-label="Brand identity — photography placeholder"></div>
+            <div class="work-cell__label">
+              <span class="work-cell__cat">Brand Identity</span>
+              <span class="work-cell__name display">[Client Name]</span>
+            </div>
+          </article>
+
+          <article class="work-cell work-cell--b">
+            <div class="work-cell__img img-ph" data-label="Photography placeholder"></div>
+            <div class="work-cell__label">
+              <span class="work-cell__cat">Photography</span>
+              <span class="work-cell__name display">[Client Name]</span>
+            </div>
+          </article>
+
+          <article class="work-cell work-cell--c">
+            <div class="work-cell__img img-ph" data-label="Graphic design placeholder"></div>
+            <div class="work-cell__label">
+              <span class="work-cell__cat">Graphic Design</span>
+              <span class="work-cell__name display">[Client Name]</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Agency positioning ────────────────────────────────────────── -->
+    <section class="home-about" aria-label="About the agency">
+      <div class="wrap">
+        <div class="home-about__inner">
+          <h2 class="home-about__heading display">
+            We Build<br>
+            Moments<br>
+            That Live<br>
+            In Your<br>
+            Head<br>
+            <span class="signal">Rent&#8209;Free.</span>
+          </h2>
+          <div>
+            <p class="home-about__body">
+              <!-- PLACEHOLDER — Will to edit -->
+              We are Certified Headlines. A creative agency. A collective of passionate creators who design, shoot, and build things that matter.
+            </p>
+            <p class="home-about__body" style="margin-top:1rem;">
+              We don't do average. Every brand, every frame, every deliverable — made to make people stop, look, and feel something.
+            </p>
+            <a href="about.html" class="btn home-about__cta">Who We Are</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Services teaser ───────────────────────────────────────────── -->
+    <section class="home-services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="home-services__label">What We Do</p>
+        <ul class="home-services__list" role="list">
+          <li class="home-services__item">
+            <h3 class="home-services__item-name display">Social<br>Media</h3>
+            <p class="home-services__item-desc">Content that stops the scroll.</p>
+          </li>
+          <li class="home-services__item">
+            <h3 class="home-services__item-name display">Graphic<br>Design</h3>
+            <p class="home-services__item-desc">Brand systems built to last.</p>
+          </li>
+          <li class="home-services__item">
+            <h3 class="home-services__item-name display">Photo&shy;graphy</h3>
+            <p class="home-services__item-desc">Moments worth keeping.</p>
+          </li>
+          <li class="home-services__item">
+            <h3 class="home-services__item-name display">Video&shy;graphy</h3>
+            <p class="home-services__item-desc">Stories that move.</p>
+          </li>
+        </ul>
+        <div style="margin-top:var(--gap-md);">
+          <a href="services.html" class="btn">See All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Closing statement ─────────────────────────────────────────── -->
+    <section class="home-closing" aria-label="Closing statement">
+      <p class="home-closing__statement display">
+        We Make<br>
+        It <span class="signal">Matter.</span>
+      </p>
+      <a href="contact.html" class="home-closing__link">Let's work together</a>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <!-- Drop logo here: <img src="assets/logo/ch-logo-reversed.svg" alt="Certified Headlines" style="height:28px;"> -->
+        <span class="footer__logo display">Certified Headlines</span>
+        <p class="footer__tagline">We Make Headlines.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://instagram.com/certifiedheadlines" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Certified Headlines</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

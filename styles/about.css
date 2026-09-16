@@ -1,0 +1,189 @@
+/* ─── About page hero ────────────────────────────────────────────────────── */
+.about-hero {
+  background-color: var(--ink);
+  color: var(--paper);
+  padding-block: var(--gap-xl);
+  overflow: hidden;
+  position: relative;
+}
+
+.about-hero__question {
+  font-family: var(--font-display);
+  font-size: clamp(4.5rem, 12vw, 11rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+/* Spray mark on "WHO ARE WE?" */
+.about-hero__question .spray {
+  bottom: -12%;
+  left: -2%;
+  width: 104%;
+  height: 50%;
+}
+
+/* ─── Answer section ─────────────────────────────────────────────────────── */
+.about-answer {
+  background-color: var(--paper);
+  padding-block: var(--gap-xl);
+}
+
+.about-answer__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-xl);
+  align-items: start;
+}
+
+.about-answer__image {
+  background-color: var(--warm-grey);
+  aspect-ratio: 3 / 4;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-answer__img-ph {
+  width: 100%;
+  height: 100%;
+  background-color: var(--warm-grey);
+  display: flex;
+  align-items: flex-end;
+  padding: var(--gap-sm);
+}
+
+.about-answer__img-ph::after {
+  content: attr(data-label);
+  font-family: var(--font-body);
+  font-size: var(--size-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+
+.about-answer__text {
+  padding-top: var(--gap-md);
+}
+
+.about-answer__heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  text-transform: uppercase;
+  line-height: 0.92;
+  margin-bottom: var(--gap-md);
+}
+
+.about-answer__copy {
+  font-size: var(--size-md);
+  line-height: 1.75;
+  color: var(--sage);
+  max-width: 44ch;
+}
+
+.about-answer__copy p + p { margin-top: var(--gap-sm); }
+
+.about-answer__copy strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* ─── Statement block ────────────────────────────────────────────────────── */
+.about-statement {
+  background-color: var(--ink);
+  color: var(--paper);
+  padding-block: var(--gap-xl);
+}
+
+.about-statement__lines {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+
+.about-statement__line {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 6.5rem);
+  text-transform: uppercase;
+  line-height: 0.95;
+  border-bottom: 1px solid rgba(138, 144, 137, 0.15);
+  padding-bottom: var(--gap-sm);
+  display: flex;
+  align-items: baseline;
+  gap: var(--gap-sm);
+}
+
+.about-statement__line:last-child { border-bottom: none; }
+
+/* ─── Collective section ─────────────────────────────────────────────────── */
+.about-collective {
+  background-color: var(--warm-grey);
+  padding-block: var(--gap-xl);
+}
+
+.about-collective__heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin-bottom: var(--gap-lg);
+}
+
+.collective-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap-sm);
+}
+
+.collective-member {
+  background-color: var(--paper);
+}
+
+.collective-member__img {
+  aspect-ratio: 1;
+  background-color: var(--warm-grey);
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--gap-xs);
+}
+
+.collective-member__img::after {
+  content: attr(data-label);
+  font-family: var(--font-body);
+  font-size: var(--size-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+
+.collective-member__info {
+  padding: var(--gap-sm);
+  border-top: 1px solid var(--warm-grey);
+}
+
+.collective-member__name {
+  font-family: var(--font-display);
+  font-size: var(--size-lg);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.collective-member__role {
+  font-size: var(--size-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-top: 0.25rem;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .about-answer__inner { grid-template-columns: 1fr; }
+  .about-answer__image { aspect-ratio: 4 / 3; }
+}
+
+@media (max-width: 480px) {
+  .collective-grid { grid-template-columns: 1fr; }
+}

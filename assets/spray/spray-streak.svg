@@ -1,0 +1,11 @@
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="streak-f" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.06 0.08" numOctaves="3" seed="12" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+      <feGaussianBlur in="displaced" stdDeviation="1.2"/>
+    </filter>
+  </defs>
+  <path d="M10 100 Q40 20 110 10" stroke="#ff6a0f" stroke-width="14" stroke-linecap="round" fill="none" filter="url(#streak-f)" opacity="0.82"/>
+  <path d="M18 94 Q44 28 106 16" stroke="#ff6a0f" stroke-width="6" stroke-linecap="round" fill="none" filter="url(#streak-f)" opacity="0.45"/>
+</svg>

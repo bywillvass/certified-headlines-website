@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Certified Headlines</title>
+  <meta name="description" content="Ready to make headlines? Get in touch — let's build something worth talking about.">
+
+  <link rel="stylesheet" href="https://use.typekit.net/wdv3qtv.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body class="page">
+
+  <!-- ─── Navigation ──────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="Certified Headlines — home">
+        <span class="nav__logo-wordmark">Certified Headlines</span>
+      </a>
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-page">
+
+      <!-- ─── Left — Info ──────────────────────────────────────────────── -->
+      <div class="contact-info">
+        <h1 class="contact-info__heading display" style="position:relative;">
+          Let's<br>
+          Make<br>
+          Head<span class="signal">lines.</span>
+          <!-- Spray mark on the heading -->
+          <svg class="spray" viewBox="0 0 420 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="bottom:-6%;left:-2%;width:96%;height:40%;position:absolute;overflow:visible;">
+            <defs>
+              <filter id="f-contact" x="-20%" y="-60%" width="140%" height="220%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.034 0.05" numOctaves="4" seed="15" result="n"/>
+                <feDisplacementMap in="SourceGraphic" in2="n" scale="12" xChannelSelector="R" yChannelSelector="G" result="d"/>
+                <feGaussianBlur in="d" stdDeviation="0.8"/>
+              </filter>
+            </defs>
+            <ellipse cx="210" cy="55" rx="188" ry="38" stroke="#ff6a0f" stroke-width="7" stroke-dasharray="7 2" fill="none" filter="url(#f-contact)" opacity="0.87" transform="rotate(-1.5 210 55)"/>
+          </svg>
+        </h1>
+
+        <div class="contact-info__details">
+          <div class="contact-detail">
+            <span class="contact-detail__label">Email</span>
+            <a href="mailto:certifiedheadlines@gmail.com" class="contact-detail__value">certifiedheadlines@gmail.com</a>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail__label">Instagram</span>
+            <a href="https://instagram.com/certifiedheadlines" target="_blank" rel="noopener noreferrer" class="contact-detail__value">@certifiedheadlines</a>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail__label">Based</span>
+            <span class="contact-detail__value">Sydney — available to travel for the right project.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── Right — Form ─────────────────────────────────────────────── -->
+      <div class="contact-form-col">
+        <p class="contact-form-col__label">Send us a message</p>
+
+        <form
+          class="contact-form"
+          name="contact"
+          method="POST"
+          action="mailto:certifiedheadlines@gmail.com"
+          enctype="text/plain"
+          novalidate
+          aria-label="Contact form"
+        >
+          <!-- PLACEHOLDER form — replace action with a real form handler (Formspree, Netlify, etc.) when deploying -->
+
+          <div class="form-field">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full name"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="service">What Are You Looking For?</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service</option>
+              <option value="social-media">Social Media</option>
+              <option value="graphic-design">Graphic Design</option>
+              <option value="photography">Photography</option>
+              <option value="videography">Videography</option>
+              <option value="multiple">Multiple Services</option>
+              <option value="other">Not Sure Yet</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Tell Us About Your Project</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="What do you need and when do you need it?"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn">Send It</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ─── Footer ────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo display">Certified Headlines</span>
+        <p class="footer__tagline">We Make Headlines.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://instagram.com/certifiedheadlines" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Certified Headlines</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

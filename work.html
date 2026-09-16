@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Certified Headlines</title>
+  <meta name="description" content="Brand identity, photography, graphic design, videography — see what we've made.">
+
+  <link rel="stylesheet" href="https://use.typekit.net/wdv3qtv.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/work.css">
+</head>
+<body class="page">
+
+  <!-- ─── Navigation ──────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="Certified Headlines — home">
+        <span class="nav__logo-wordmark">Certified Headlines</span>
+      </a>
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="work.html" aria-current="page">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── Page header ───────────────────────────────────────────────── -->
+    <section class="work-hero">
+      <div class="wrap work-hero__inner">
+        <h1 class="work-hero__heading display">Our<br><span class="signal">Work</span></h1>
+        <p class="work-hero__sub">
+          <!-- PLACEHOLDER -->
+          Brand identities. Campaign photography. Motion and design work. Built for clients who want to be remembered.
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── Filter bar ────────────────────────────────────────────────── -->
+    <div class="work-filter" role="group" aria-label="Filter projects by category">
+      <div class="wrap work-filter__inner">
+        <span class="work-filter__label">Filter:</span>
+        <button class="work-filter__btn is-active" data-filter="all">All</button>
+        <button class="work-filter__btn" data-filter="brand-identity">Brand Identity</button>
+        <button class="work-filter__btn" data-filter="photography">Photography</button>
+        <button class="work-filter__btn" data-filter="graphic-design">Graphic Design</button>
+        <button class="work-filter__btn" data-filter="videography">Videography</button>
+      </div>
+    </div>
+
+    <!-- ─── Work grid ─────────────────────────────────────────────────── -->
+    <section class="work-grid" aria-label="Project grid">
+      <div class="wrap">
+        <div class="work-grid__inner">
+
+          <article class="project project--1" data-category="brand-identity">
+            <div class="project__img-ph img-ph" data-label="Brand identity — full campaign placeholder"></div>
+            <div class="project__overlay">
+              <div class="project__info">
+                <span class="project__cat">Brand Identity</span>
+                <h2 class="project__name display">[Client Name]<br>Brand System</h2>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--2" data-category="photography">
+            <div class="project__img-ph img-ph" data-label="Photography — portrait / editorial placeholder"></div>
+            <div class="project__overlay">
+              <div class="project__info">
+                <span class="project__cat">Photography</span>
+                <h2 class="project__name display">[Client Name]</h2>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--3" data-category="graphic-design">
+            <div class="project__img-ph img-ph" data-label="Graphic design — poster / merch placeholder"></div>
+            <div class="project__overlay">
+              <div class="project__info">
+                <span class="project__cat">Graphic Design</span>
+                <h2 class="project__name display">[Client Name]</h2>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--4" data-category="brand-identity">
+            <div class="project__img-ph img-ph" data-label="Brand identity — logo & type system placeholder"></div>
+            <div class="project__overlay">
+              <div class="project__info">
+                <span class="project__cat">Brand Identity</span>
+                <h2 class="project__name display">[Client Name]</h2>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--5" data-category="videography">
+            <div class="project__img-ph img-ph" data-label="Videography — still / thumbnail placeholder"></div>
+            <div class="project__overlay">
+              <div class="project__info">
+                <span class="project__cat">Videography</span>
+                <h2 class="project__name display">[Client Name]</h2>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--6" data-category="photography">
+            <div class="project__img-ph img-ph" data-label="Photography — event / product placeholder"></div>
+            <div class="project__overlay">
+              <div class="project__info">
+                <span class="project__cat">Photography</span>
+                <h2 class="project__name display">[Client Name]</h2>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--7" data-category="graphic-design">
+            <div class="project__img-ph img-ph" data-label="Graphic design — social / digital placeholder"></div>
+            <div class="project__overlay">
+              <div class="project__info">
+                <span class="project__cat">Graphic Design</span>
+                <h2 class="project__name display">[Client Name]</h2>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo display">Certified Headlines</span>
+        <p class="footer__tagline">We Make Headlines.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://instagram.com/certifiedheadlines" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Certified Headlines</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
