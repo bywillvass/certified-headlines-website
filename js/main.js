@@ -23,23 +23,6 @@
   });
 })();
 
-/* ─── Hero headline reveal (home page only) ──────────────────────────────── */
-(function initHeroReveal() {
-  const hero = document.querySelector('.hero');
-  if (!hero) return;
-
-  // Respect prefers-reduced-motion
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReduced) {
-    hero.classList.add('is-ready');
-    return;
-  }
-
-  // Small delay so fonts have a chance to load before the reveal
-  requestAnimationFrame(() => {
-    setTimeout(() => hero.classList.add('is-ready'), 80);
-  });
-})();
 
 /* ─── Active nav link ────────────────────────────────────────────────────── */
 (function setActiveLink() {

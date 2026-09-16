@@ -9,25 +9,8 @@
   position: relative;
 }
 
-/* Reveal line wrapper — hides text below baseline */
-.reveal-line {
-  display: block;
-  overflow: hidden;
-}
-
-.reveal-text {
-  display: block;
-  transform: translateY(112%);
-  transition: transform var(--t-slow) var(--ease);
-  will-change: transform;
-}
-
-.hero.is-ready .reveal-text {
-  transform: translateY(0);
-}
-
-.reveal-line:nth-child(2) .reveal-text { transition-delay: 0.12s; }
-.reveal-line:nth-child(3) .reveal-text { transition-delay: 0.22s; }
+.reveal-line { display: block; }
+.reveal-text { display: block; }
 
 /* Left — copy */
 .hero__copy {
