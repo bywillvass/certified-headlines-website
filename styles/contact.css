@@ -20,7 +20,7 @@
 .contact-info__heading {
   font-family: var(--font-display);
   font-size: clamp(4rem, 9vw, 9rem);
-  line-height: 0.78;
+  line-height: 0.72;
   text-transform: uppercase;
 }
 
