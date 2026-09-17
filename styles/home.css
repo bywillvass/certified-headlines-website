@@ -164,7 +164,7 @@
 .home-work__grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: 1fr 1fr;
   gap: var(--gap-sm);
 }
 
