@@ -24,6 +24,28 @@
 })();
 
 
+/* ─── Video hover preview ────────────────────────────────────────────────── */
+(function initVideoHover() {
+  document.querySelectorAll('[data-video-id]').forEach(card => {
+    const id = card.dataset.videoId;
+    let iframe = null;
+
+    card.addEventListener('mouseenter', () => {
+      iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&controls=0&loop=1&playlist=${id}&rel=0`;
+      iframe.allow = 'autoplay';
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;z-index:1;pointer-events:none;';
+      card.appendChild(iframe);
+    });
+
+    card.addEventListener('mouseleave', () => {
+      if (iframe) { iframe.remove(); iframe = null; }
+    });
+  });
+})();
+
+
 /* ─── Active nav link ────────────────────────────────────────────────────── */
 (function setActiveLink() {
   const path = window.location.pathname.split('/').pop() || 'index.html';
