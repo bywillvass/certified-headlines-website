@@ -127,6 +127,20 @@
   color: var(--sage);
 }
 
+/* Video iframe — fills card height, wide enough to cover, cropped by overflow:hidden */
+.project[data-video-id] iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: calc(260px * 16 / 9);
+  min-width: 100%;
+  border: none;
+  z-index: 1;
+  pointer-events: none;
+}
+
 /* Height rules */
 .project--2,
 .project--5  { min-height: 260px; }

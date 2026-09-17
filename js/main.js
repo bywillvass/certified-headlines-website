@@ -25,27 +25,6 @@
 
 
 
-/* ─── Video cover fill ───────────────────────────────────────────────────── */
-(function initVideoCover() {
-  function resize() {
-    document.querySelectorAll('[data-video-id] iframe').forEach(iframe => {
-      const container = iframe.closest('[data-video-id]');
-      const cw = container.offsetWidth;
-      const ch = container.offsetHeight;
-      if (!cw || !ch) return;
-      if (cw / ch > 16 / 9) {
-        iframe.style.width  = '100%';
-        iframe.style.height = (cw / (16 / 9)) + 'px';
-      } else {
-        iframe.style.height = '100%';
-        iframe.style.width  = (ch * (16 / 9)) + 'px';
-      }
-    });
-  }
-  window.addEventListener('load', resize);
-  window.addEventListener('resize', resize);
-})();
-
 
 /* ─── Active nav link ────────────────────────────────────────────────────── */
 (function setActiveLink() {

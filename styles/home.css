@@ -183,6 +183,20 @@
 .work-cell--b { grid-column: span 5; min-height: 240px; }
 .work-cell--c { grid-column: span 5; min-height: 240px; }
 
+/* Video iframe — fills cell width, tall enough to cover, cropped by overflow:hidden */
+.work-cell--c iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: calc(100% * 16 / 9);
+  min-height: 100%;
+  border: none;
+  z-index: 0;
+  pointer-events: none;
+}
+
 .work-cell__img {
   width: 100%;
   aspect-ratio: auto;
