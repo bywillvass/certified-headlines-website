@@ -203,6 +203,7 @@
   opacity: 0;
   transform: translateY(8px);
   transition: opacity var(--t-base) var(--ease), transform var(--t-base) var(--ease);
+  z-index: 2;
 }
 
 .work-cell__cat {

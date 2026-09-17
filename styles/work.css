@@ -83,7 +83,6 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  aspect-ratio: 4 / 3;
 }
 
 .project:hover .project__overlay { opacity: 1; }
@@ -97,14 +96,13 @@
 
 .project__img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
 .project__img-ph {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4 / 3;
   background-color: var(--warm-grey);
   position: relative;
   display: flex;
