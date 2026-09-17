@@ -164,7 +164,7 @@
 .home-work__grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   gap: var(--gap-sm);
 }
 
@@ -180,8 +180,8 @@
 }
 
 .work-cell--a { grid-column: span 7; grid-row: span 2; }
-.work-cell--b { grid-column: span 5; }
-.work-cell--c { grid-column: span 5; }
+.work-cell--b { grid-column: span 5; min-height: 240px; }
+.work-cell--c { grid-column: span 5; min-height: 240px; }
 
 .work-cell__img {
   width: 100%;

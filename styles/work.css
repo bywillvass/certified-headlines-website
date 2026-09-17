@@ -76,6 +76,7 @@
 .work-grid__inner {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 260px 260px;
   gap: 0.75rem;
 }
 
