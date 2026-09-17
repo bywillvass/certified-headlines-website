@@ -112,6 +112,11 @@
 .project--6 .project__img  { min-height: 360px; }
 .project--7 .project__img  { min-height: 360px; }
 
+.project__link {
+  display: block;
+  height: 100%;
+}
+
 /* Placeholder label on image */
 .project__img-ph {
   width: 100%;
